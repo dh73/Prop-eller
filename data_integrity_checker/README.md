@@ -17,7 +17,7 @@ The scoreboard will run `Data integrity` checks of type:
 
 The interface of the formal scoreboard is as follows:
 
-![5cdeac58a78fa26a1fb59431901c0d1b.png](:/b15251e15cf44cedbbf267f5cac58c79)
+ <img src="https://github.com/dh73/Prop-eller/blob/main/data_integrity_checker/img/dchk.png" width="800">
 
 **Parameters:**
 
