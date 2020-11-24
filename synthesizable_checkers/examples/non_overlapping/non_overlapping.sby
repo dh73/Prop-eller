@@ -1,0 +1,20 @@
+[tasks]
+provemode
+covermode
+
+[options]
+provemode: mode prove
+covermode: mode cover
+
+[engines]
+smtbmc boolector
+
+[script]
+provemode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal non_overlapping.v
+provemode: prep -top non_overlapping
+
+covermode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal non_overlapping.v
+covermode: prep -top non_overlapping
+
+[files]
+non_overlapping.v

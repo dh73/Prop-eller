@@ -1,0 +1,20 @@
+[tasks]
+provemode
+covermode
+
+[options]
+provemode: mode prove
+covermode: mode cover
+
+[engines]
+smtbmc boolector
+
+[script]
+provemode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal toggling.v
+provemode: prep -top toggling
+
+covermode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal toggling.v
+covermode: prep -top toggling
+
+[files]
+toggling.v
