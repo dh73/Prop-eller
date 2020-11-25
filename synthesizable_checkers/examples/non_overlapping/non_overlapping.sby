@@ -10,11 +10,12 @@ covermode: mode cover
 smtbmc boolector
 
 [script]
-provemode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal non_overlapping.v
-provemode: prep -top non_overlapping
+provemode: read_verilog -formal non_overlapping.v
+provemode: prep -flatten -top non_overlapping
 
-covermode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal non_overlapping.v
-covermode: prep -top non_overlapping
+covermode: read_verilog -formal non_overlapping.v
+covermode: prep -flatten -top non_overlapping
 
 [files]
+../../checker_lib.vh
 non_overlapping.v

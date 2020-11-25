@@ -10,11 +10,12 @@ covermode: mode cover
 smtbmc boolector
 
 [script]
-provemode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal nonconsecutive.v
+provemode: read_verilog -formal nonconsecutive.v
 provemode: prep -flatten -top nonconsecutive
 
-covermode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal nonconsecutive.v
+covermode: read_verilog -formal nonconsecutive.v
 covermode: prep -flatten -top nonconsecutive
 
 [files]
+../../checker_lib.vh
 nonconsecutive.v

@@ -10,11 +10,12 @@ covermode: mode cover
 smtbmc boolector
 
 [script]
-provemode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal toggling.v
-provemode: prep -top toggling
+provemode: read_verilog -formal toggling.v
+provemode: prep -flatten -top toggling
 
-covermode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal toggling.v
-covermode: prep -top toggling
+covermode: read_verilog -formal toggling.v
+covermode: prep -flatten -top toggling
 
 [files]
+../../checker_lib.vh
 toggling.v

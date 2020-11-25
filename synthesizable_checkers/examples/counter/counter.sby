@@ -10,11 +10,12 @@ covermode: mode cover
 smtbmc boolector
 
 [script]
-provemode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal counter.v
+provemode: read_verilog -formal counter.v
 provemode: prep -flatten -top counter
 
-covermode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal counter.v
+covermode: read_verilog -formal counter.v
 covermode: prep -flatten -top counter
 
 [files]
+../../checker_lib.vh
 counter.v

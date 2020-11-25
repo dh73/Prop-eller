@@ -10,11 +10,12 @@ covermode: mode cover
 smtbmc boolector
 
 [script]
-provemode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal athenb.v
-provemode: prep -top athenb
+provemode: read_verilog -formal athenb.v
+provemode: prep -flatten -top athenb
 
-covermode: read_verilog -I /home/diego/Documents/Design/sbx/checkers_lib -formal athenb.v
-covermode: prep -top athenb
+covermode: read_verilog -formal athenb.v
+covermode: prep -flatten -top athenb
 
 [files]
+../../checker_lib.vh
 athenb.v
