@@ -21,8 +21,8 @@ module nonconsecutive
    wire 	    visited_a_completed, visited_b_completed;
 
    /* To avoid failures due overlapping requests,
-    * let constrain i_req to be low for more than
-    * 8 cycles after beign asserted */
+    * let constrain i_req to be low for
+    * 4 cycles after beign asserted. */
    wire 	    i_req;
    reg [3:0] 	    shift;
    always @(posedge i_clk) begin
