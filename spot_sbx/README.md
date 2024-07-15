@@ -93,6 +93,7 @@ State: 11
 ```
 
 And this state space as an automata with no acceptance condition:
+![Model](https://github.com/dh73/Prop-eller/blob/main/spot_sbx/model_fifo.png?raw=true)
 
 ### References
 1. Spot Library Documentation: Spot is a model-checking library that provides algorithms and data structures to manipulate omega-automata[1].
